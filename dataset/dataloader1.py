@@ -19,7 +19,7 @@ class PlayingCardDataset(Dataset):
     def classes(self):
         return self.data.classes
     
-    def get_data_loaders(base_path='../model_data/', batch_size=32):
+    def get_data_loaders(base_path='/projects/dsci410_510/Luke_Card_Classifier', batch_size=32):
 
         transform = transforms.Compose([transforms.Resize((128, 128)), transforms.ToTensor(),])
     
