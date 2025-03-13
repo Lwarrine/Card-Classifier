@@ -26,6 +26,7 @@ class Trainer():
         self.set_seed()
                      
     def train_step(self, model, train_loader, loss_fn, optimizer, reg_param, device):
+        model.to(device)
         model.train()
         running_loss = 0.0
         correct = 0
@@ -46,6 +47,7 @@ class Trainer():
         return avg_loss, train_acc
 
     def evaluation_step(self, model, data_loader, loss_fn, reg_param, device):
+        model.to(device)
         model.eval()
         running_loss = 0.0
         correct = 0
