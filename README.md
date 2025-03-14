@@ -9,7 +9,7 @@ The dataset I am planning to use is one I found on Kaggle (https://www.kaggle.co
 
 ## Model Training Instructions
 Make sure the data is formated 
-![Alt text](data_org_example.png)
+![Alt text](assets/data_org_example.png)
 
 ## Results
 
