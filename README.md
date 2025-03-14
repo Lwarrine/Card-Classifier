@@ -14,7 +14,7 @@ Make sure the datasets are formatted in the correct folder structure, A folder c
 
 Also important that the folders and files in dataset and model folders are formatted the same way as they are on GitHub.
 
-Then in a .py script or a Jupyter Notebook, import the `Trainer` class from train_models.py (may need to import os and sys depedning on location importing to). Assign Trainer class to a variable with base_path argument set to file path to data folder  trainer = Trainer(base_path='/projects/Data'). 
+Then in a '.py' script or a Jupyter Notebook, import the `Trainer` class from 'train_models.py' (may need to import os and sys depedning on location importing to). Assign Trainer class to a variable with base_path argument set to file path to data folder  trainer = Trainer(base_path='/projects/Data'). 
 
 Optional arguments for Trainer class include:  
 input size - number of input channels (default = 3)    
