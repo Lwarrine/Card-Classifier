@@ -14,7 +14,7 @@ Make sure the datasets are formatted in the correct folder structure, A folder c
 
 Also important that the folders and files in dataset and model folders are formatted the same way as they are on GitHub.
 
-Then in a '.py' script or a Jupyter Notebook, import the `Trainer` class from 'train_models.py' (may need to import os and sys depedning on location importing to). Assign Trainer class to a variable with base_path argument set to file path to data folder  trainer = Trainer(base_path='/projects/Data'). 
+Then in a '.py' script or a Jupyter Notebook, import the `Trainer` class from 'train_models.py' (may need to import os and sys depedning on location importing to). Assign Trainer class to a variable with base_path argument set to file path to data folder.
 
 Optional arguments for Trainer class include:  
 input size - number of input channels (default = 3)    
@@ -33,9 +33,10 @@ Example jupyter notebook can be found here [notebooks/eval_from_scratch.ipynb](h
 Another example usage
 
 import model.train_models.py
-trainer = Trainer(base_path='/projects/dsci410_510/Luke_Card_Classifier', random_seed = 12)
+trainer = Trainer(base_path='/projects/Data', random_seed = 12)
 model, train_losses, train_accuracies, valid_losses, valid_accuracies, test_losses, test_accuracies = trainer.train_conv_model()
 
 ## Results
+I used random_seed = 12 for optimizing 
 
 ## Limitations
