@@ -8,7 +8,7 @@ The overarching purpose of this project is to experiment with image classificati
 The dataset I am planning to use is one I found on Kaggle (https://www.kaggle.com/datasets/gpiosenka/cards-image-datasetclassification/data). The dataset is broken into a training, testing, and validation set already with each image already being classified based on suit and rank. I changed these classifications by combining the folders until I was left with the 6 classes listed above in each of the data sets.
 
 ## Model Training Instructions
-Make sure the data is formated 
+Make sure the data is formated  
 ![Alt text](assets/data_org_example.png)
 
 ## Results
