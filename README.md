@@ -37,6 +37,18 @@ trainer = Trainer(base_path='/projects/Data', random_seed = 12)
 model, train_losses, train_accuracies, valid_losses, valid_accuracies, test_losses, test_accuracies = trainer.train_conv_model()
 
 ## Results
-I used random_seed = 12 for optimizing 
+I used the same random state (random_seed = 12) for determining metrics/hyperparameters and got the best results from the following (these are also the defaults for the optional arguments is applicable):
+
+lr - 1e-3
+batch size - 128
+reg paramater - 0.001
+training length - 15 epochs
+loss function - torch.nn.CrossEntropyLoss()
+Optimizer - torch.optim.Adam()
+
+With these metrics/hyperparameters I got an accuracy of 0.9807 and a loss of 0.07498 after the 12th epoch. Below are graphs of the Accuracy 
+
 
 ## Limitations
+The model may sturggle with images where the card doesnt take up entire image because the training data consistet of images where the cards took up the entire image and the model is not super co
+Model is fairly simple so may st
