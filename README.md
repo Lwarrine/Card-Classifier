@@ -39,12 +39,12 @@ model, train_losses, train_accuracies, valid_losses, valid_accuracies, test_loss
 ## Results
 I used the same random state (random_seed = 12) for determining metrics/hyperparameters and got the best results from the following (these are also the defaults for the optional arguments is applicable):
 
-lr - 1e-3
-batch size - 128
-reg paramater - 0.001
-training length - 15 epochs
-loss function - torch.nn.CrossEntropyLoss()
-Optimizer - torch.optim.Adam()
+lr - 1e-3  
+batch size - 128  
+reg paramater - 0.001  
+training length - 15 epochs  
+loss function - torch.nn.CrossEntropyLoss()  
+Optimizer - torch.optim.Adam()  
 
 With these metrics/hyperparameters I got an accuracy of 0.9807 and a loss of 0.07498 after the 12th epoch. Below are graphs of the accuracy over epochs, loss over epochs, and an example set of images with predicted labels
 
@@ -66,4 +66,4 @@ Each number corresponds to a class label as follows:
 5 - Red Number Card  
 
 ## Limitations
-The trained model may sturggle with images where the card doesnt take up entire image because the training data consists of images where the cards took up the entire image and the model is not super complex. In theory this model could be trained on any image data set assuming it is properly formated but as mentioned earlier, the model structure is not complex, so it may struggle with higher class sizes or more complex images.
+The model is a Convolutional Neural Network so it requires a large dataset to properly train and requires a lot of resources to train. The trained model may sturggle with images where the card doesnt take up entire image or with images that are not of the original size from the kaggle dataset because of how the images get reshape in the dataloader.  In theory this model could be trained on any image data set assuming it is properly formated but, the models structure is not complex, so it may struggle with higher class sizes or more complex images. There is also no easy way to change the optimizer from torch.optim.Adam() unless the code is modified.
