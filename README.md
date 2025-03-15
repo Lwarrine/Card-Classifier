@@ -2,13 +2,13 @@
 DSCI 410 project to classify pictures of playing cards into one of six classes (red aces, red face cards, red number cards, black aces, black face cards, black number cards).
 
 ## Project Purpose
-The overarching purpose of this project is to experiment with image classification and the more specific purpose is to correctly classify images of playing cards from a variety of decks into 6 distinct classes. This is an interesting project for me because I enjoy playing card games and it's always interesting to see how different decks design their cards while still being identifiable to people. I am also interested in trying to train a model with uneven class sizes and seeing how that may effect the model and accuracy. 
+The overarching purpose of this project is to experiment with image classification and the more specific purpose is to correctly classify images of playing cards from a variety of decks into 6 distinct classes. This is an interesting project for me because I enjoyed playing card games as a kid and I always found it fascinating how many different deck designs there were where the cards were still easily identifiable. I am also interested in trying to train a model with uneven class sizes and seeing how that may effect the model and accuracy. 
 
 ## Data Overview
-The dataset I am planning to use is one I found on Kaggle (https://www.kaggle.com/datasets/gpiosenka/cards-image-datasetclassification/data). The dataset is broken into a training, testing, and validation set already with each image already being classified based on suit and rank. I changed these classifications by combining the folders until I was left with the 6 classes listed above in each of the data sets.
+The dataset I am planning to use is one I found on Kaggle (https://www.kaggle.com/datasets/gpiosenka/cards-image-datasetclassification/data). The dataset is already broken into a training, testing, and validation set with each image being classified based on suit and rank. I changed these classifications by combining the folders until I was left with the 6 classes listed above in each of the data sets.
 
 ## Model Training Instructions
-Make sure the datasets are formatted in the correct folder structure, A folder containing three folders named test, train and valid. in each of these three folders are folders of each class and in the folders of each class are the images for that class. An example of the correct structure is in the image below.
+Make sure the datasets are formatted in the correct folder structure, A folder containing three folders named test, train and valid. In each of these three folders are folders of each class and in the folders of each class are the images for that class. An example of the correct structure is in the image below.
 
 ![Alt text](assets/data_org_example.png)
 
