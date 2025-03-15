@@ -32,9 +32,9 @@ Example jupyter notebook can be found here [notebooks/eval_from_scratch.ipynb](h
 
 Another example usage
 
-import model.train_models.py
-trainer = Trainer(base_path='/projects/Data', random_seed = 12)
-model, train_losses, train_accuracies, valid_losses, valid_accuracies, test_losses, test_accuracies = trainer.train_conv_model()
+import model.train_models.py  
+trainer = Trainer(base_path='/projects/Data', random_seed = 12)  
+model, train_losses, train_accuracies, valid_losses, valid_accuracies, test_losses, test_accuracies = trainer.train_conv_model()  
 
 ## Results
 I used the same random state (random_seed = 12) for determining metrics/hyperparameters and got the best results from the following (these are also the defaults for the optional arguments is applicable):
