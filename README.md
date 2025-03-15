@@ -56,5 +56,14 @@ With these metrics/hyperparameters I got an accuracy of 0.9807 and a loss of 0.0
 
 ![Alt text](assets/predicted_labels.png)
 
+Each number corresponds to a class label as follows:
+
+0 - Black Ace  
+1 - Black Face Card  
+2 - Black Number Card  
+3 - Red Ace  
+4 - Red Face Card  
+5 - Red Number Card  
+
 ## Limitations
 The trained model may sturggle with images where the card doesnt take up entire image because the training data consists of images where the cards took up the entire image and the model is not super complex. In theory this model could be trained on any image data set assuming it is properly formated but as mentioned earlier, the model structure is not complex, so it may struggle with higher class sizes or more complex images.
