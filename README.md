@@ -46,9 +46,15 @@ training length - 15 epochs
 loss function - torch.nn.CrossEntropyLoss()
 Optimizer - torch.optim.Adam()
 
-With these metrics/hyperparameters I got an accuracy of 0.9807 and a loss of 0.07498 after the 12th epoch. Below are graphs of the Accuracy 
+With these metrics/hyperparameters I got an accuracy of 0.9807 and a loss of 0.07498 after the 12th epoch. Below are graphs of the accuracy over epochs, loss over epochs, and an example set of images with predicted labels
 
+![Alt text](assets/accuracy_graph.png)
+
+![Alt text](assets/loss_graph.png)
+
+![Alt text](assets/example_set.png)
+
+![Alt text](assets/predicted_labels.png)
 
 ## Limitations
-The model may sturggle with images where the card doesnt take up entire image because the training data consistet of images where the cards took up the entire image and the model is not super co
-Model is fairly simple so may st
+The trained model may sturggle with images where the card doesnt take up entire image because the training data consists of images where the cards took up the entire image and the model is not super complex. In theory this model could be trained on any image data set assuming it is properly formated but as mentioned earlier, the model structure is not complex, so it may struggle with higher class sizes or more complex images.
